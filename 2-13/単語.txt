@@ -1,0 +1,11 @@
+1. PostgreSQL・Oracle SQL
+	⇒DBMSの１つであり、PostgreSQLはオープンソース・OracleSQLはOracle社の製品である。
+
+2. TortoiseGit・TortoiseSVN
+	⇒TortoiseGitは、gitをGUIで操作可能なクライアントソフト
+	　TortoiseSVNは、subversionをGUIで操作可能なクライアントソフト
+
+3. 外部設計・内部設計
+	⇒外部設計は、操作画面や操作方法などのインタフェースを設計します。基本設計とも言われます。
+	　内部設計は、プログラミングなど具体的な実装を行える状態にもっていく、
+	　データ処理や初期値などの定義を設定します。
