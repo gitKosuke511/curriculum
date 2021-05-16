@@ -1,0 +1,16 @@
+body{
+    text-align: center;
+    background-color: dimgrey;
+    font-family: serif;
+    color: white;
+}
+hr{
+    size: 50;
+}
+#btn{
+    border-radius: 15%;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
