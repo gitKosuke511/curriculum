@@ -39,8 +39,29 @@
             <?php
                  $psd = $cls->getPostData();
                  foreach($psd as $rows){
-                     echo '<tr class=table_body><td>'.$rows['id'].'</td><td>'.$rows['title'].'</td><td>'.$rows['category_no'].'</td><td>'.$rows['comment'].'</td><td>'.$rows['created'].'</td></tr>';
-                 }
+                    echo '<tr class=table_body><td>';
+                    echo $rows['id'];
+                    echo '</td><td>';
+                    echo $rows['title'];
+                    echo '</td><td>';
+                    switch($rows['category_no']){
+                        case 1;
+                            echo '食事';
+                            break;
+                        case 2;
+                            echo '旅行';
+                            break;
+                        default;
+                            echo 'その他';
+                            break;
+                    }
+                    //echo $rows['category_no']; 2021/6/14コメントアウト
+                    echo '</td><td>';
+                    echo $rows['comment'];
+                    echo '</td><td>';
+                    echo $rows['created'];
+                    echo '</td></tr>';
+                }
             ?>
         </table>
         </div>
