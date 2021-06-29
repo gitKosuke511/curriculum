@@ -1,0 +1,91 @@
+.text_box{
+    height: 20px;
+    margin: 10px 0px;
+    width: 200px;
+}
+.select_box{
+    margin: 10px 0px;
+    width: 150px;
+    text-align: center;
+}
+.login_title{
+    display: flex;   
+}
+.btn_create_user{    
+    background-color: #219ddd;
+    border-radius: 10px;
+    width: 144px;
+    height: 36px;
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn_create_user a{
+    color: white;
+    text-decoration: none;
+}
+.btn_create_user a:visited{
+    color: white;
+}
+.btn_login{
+    background-color: blue;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+.btn_delete{
+    display: inline;
+    padding: 5px;
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+.btn_create_book{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 20px 0px;
+}
+.btn_create_book_post{
+    background-color: blue;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+}
+.btn_logout{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: darkgray;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 20px 10px;
+}
+.logout_text{
+    text-decoration: none;
+}
+
+table{
+    table-layout: fixed;
+    width: 500px;
+    border-collapse: collapse;
+}
+table th{
+    width: 25%;
+    height: 30px;
+    background-color: lightgrey;
+    border: 1px solid gray;
+}
+table td{
+    text-align: center;
+    height: 50px;
+    border: 1px solid gray;
+}
