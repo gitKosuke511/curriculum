@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2章チェックテスト</title>
+    <style>
+        table {
+            font-size: 1.5em;
+            text-align: center;
+        }
+        th,td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <select onchange="chnageLang()" id="lang">
+        <option id="select">選択してください</option>
+        <option id="selected_jpn">日本語</option>
+        <option id="selected_en">English</option>
+        <option id="selected_all">全て表示</option>
+    </select>
+    <table>
+        <tr id="ja">
+            <th>日本</th>
+            <td>こんにちは</td>
+            <td>ありがとう</td>
+            <td>さようなら</td>
+        </tr>
+        <tr id="en">
+            <th>English</th>
+            <td>Hello</td>
+            <td>Thank you</td>
+            <td>Good Bye</td>
+        </tr>
+    </table>
+
+    <script>
+        //①onchangeで使用されている関数の中身を実装してください。
+        function chnageLang(){
+            let select_id = document.getElementById('lang').value;
+            if(select_id == '選択してください'){
+                document.getElementById('ja').style.display = '';
+                document.getElementById('en').style.display = '';
+            } else if(select_id == '日本語'){
+                document.getElementById('ja').style.display = '';
+                document.getElementById('en').style.display = 'none';
+            } else if(select_id == 'English'){
+                document.getElementById('ja').style.display = 'none';
+                document.getElementById('en').style.display = '';
+            } else{
+                document.getElementById('ja').style.display = '';
+                document.getElementById('en').style.display = '';
+            }
+        }
+    </script>
+
+</body>
+</html>
